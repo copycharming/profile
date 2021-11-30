@@ -1,0 +1,150 @@
+@import "variables.scss";
+@import "mixins.scss";
+
+// Global Components
+html {
+    scroll-behavior: auto;
+}
+
+body {
+    overflow-x: hidden;
+    @include body-font;
+    // font-family: "Roboto Slab", serif;
+}
+
+.text-primary {
+    color: $theme-primary !important;
+}
+
+p {
+    line-height: 1.75;
+    @include paragraph;
+}
+
+a {
+    color: $theme-primary;
+    &:hover,
+    &:focus,
+    &:active,
+    &.active {
+        color: darken($theme-primary, 10%);
+    }
+}
+
+h1 {
+    color: #dd4021;
+    @include heading-font;
+}
+
+// profile photo background in header
+@media (max-width: 768px) {
+    header nav .container-fluid {
+        @include paragraph;
+    }
+    header .row {
+        background-image: url("../images/profile.JPG");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 60vh;
+        width: 100%;
+        position: relative;
+        z-index: -1;
+    }
+
+    .name-background {
+        background-color: #f0f0ef;
+        position: absolute;
+        top: 10%;
+        left: 10%;
+        width: 100%;
+        height: 40%;
+        z-index: 0;
+        border: 1px solid #fcddec;
+        box-shadow: -3px 9px 61px 27px rgba(150, 150, 150, 0.2);
+        border-radius: 20px;
+        display: grid;
+        place-content: center;
+        text-align: left !important;
+        // padding: 100px 10px ;
+
+        p {
+            font-size: 1rem;
+            padding-right: 10%;
+            color: #0b1f52;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    header {
+        nav {
+            background-color: #f7f8f3 !important;
+            .container-fluid {
+                @include paragraph;
+                font-size: 1.25rem;
+            }
+            .navbar-brand {
+                font-size: 1.5rem;
+                font-weight: bold;
+            }
+        }
+    }
+    header {
+        background-image: url("../images/profile.JPG");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 100vh;
+        width: 100%;
+        position: relative;
+        z-index: -1;
+    }
+
+    .name-background {
+        background-color: #f0f0ef;
+        position: absolute;
+        top: 40%;
+        left: 10%;
+        width: 35%;
+        height: 30%;
+        z-index: 0;
+        border: 1px solid #fcddec;
+        box-shadow: -3px 9px 61px 27px rgba(150, 150, 150, 0.2);
+        border-radius: 20px;
+        display: grid;
+        place-content: center;
+        text-align: left !important;
+        // padding: 100px 10px ;
+
+        p {
+            font-size: 1.5rem;
+            padding-right: 10%;
+            color: #0b1f52;
+            @include paragraph;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    #skills {
+        // padding: 10% 0;
+        h2 {
+            font-size: 4rem;
+            @include sub-heading-font;
+            text-align: center;
+            padding: 10% 0;
+        }
+        .skill_logo{
+            width: 2.5%
+        }
+
+        .grid-box {
+            padding: 0 10%;
+            display: grid;
+            gap: 6rem;
+
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        }
+    }
+}
