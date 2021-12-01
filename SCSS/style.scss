@@ -126,17 +126,54 @@ h1 {
     }
 }
 
+
+
+// SKILLS
+
+
+#skills {
+    padding: 10% 0;
+    h2 {
+        font-size: 3rem;
+        @include sub-heading-font;
+        text-align: center;
+        padding: 0% 0 5%;
+    }
+    .skill_logo{
+        width: 10%
+    }
+
+    .grid-box {
+        padding: 0 10%;
+        display: grid;
+        place-content: center;
+        gap: 1rem;
+        grid-template-columns: repeat(auto-fit, minmax(40px, 2fr));
+    }
+    .card{
+        border-style: none;
+    }
+
+    .skill_type {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+
+
+
 @media (min-width: 768px) {
     #skills {
-        // padding: 10% 0;
+        padding: 10% 0;
         h2 {
             font-size: 4rem;
             @include sub-heading-font;
             text-align: center;
-            padding: 10% 0;
+            padding: 0% 0 5%;
         }
         .skill_logo{
-            width: 2.5%
+            width: 3%
         }
 
         .grid-box {
@@ -145,6 +182,49 @@ h1 {
             gap: 6rem;
 
             grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        }
+        .card{
+            border-style: none;
+        }
+
+        .skill_type {
+            width: 200px;
+            height: 200px;
+        }
+    }
+}
+
+
+
+
+
+
+// QUALIFICATIONS
+@media (min-width: 768px) {
+    #qualifications {
+        padding: 5% 0;
+        background-color: hsl(223, 76%, 18%);
+        .qualification_box {
+            background-color: #f0f0ef;
+            border-radius: 20px;
+            margin: 0 10%;
+            padding: 5% 0%;
+            text-align: center;
+        }
+        .qualifications_image{
+            padding: 5% 0%;
+        }
+        h2{
+            font-size: 3rem;
+            @include sub-heading-font;
+        }
+        .edu_details{
+            font-size: 2rem;
+            padding: 15% 0;
+            text-align: left;
+        .col-6{
+            color: #dd4021;
+        }
         }
     }
 }
