@@ -246,3 +246,53 @@ h1 {
         }
     
 }
+
+
+
+
+#project{
+    text-align: center;
+    padding: 10% 0;
+    .skill_logo{
+        width: 3%
+    }
+    h2 {
+        font-size: 3.5rem;
+        @include sub-heading-font;
+        text-align: center;
+        padding: 0% 0 5%;
+    }
+    .container-fluid{
+        width: 60%;
+    }
+
+
+    .project_image{
+        width: 200px;
+        height: 200px;
+        padding: 0% 0 5%;
+    }
+
+    .project_title{
+        font-size: 2rem;
+        padding: 0% 0 5%;
+    }
+    .project_description{
+        font-size: 1.25rem;
+        padding: 0% 0 5%;
+    }
+
+    .twitter_project{
+        text-align: right;
+        padding-left: 10%;
+        padding-right: 2%;
+
+    }
+
+    .bitcoin_project{
+        text-align: left;
+        padding-right: 10%;
+        padding-left: 2%;
+    }
+}
+
