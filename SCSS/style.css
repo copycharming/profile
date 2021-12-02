@@ -187,10 +187,23 @@ h1 {
   }
   #qualifications .edu_details {
     font-size: 2rem;
-    padding: 15% 0;
-    text-align: left;
+    padding: 10% 0;
   }
-  #qualifications .edu_details .col-6 {
+  #qualifications .edu_details table {
+    border-collapse: collapse;
+    width: 90%;
+  }
+  #qualifications .edu_details table th {
+    text-align: left;
+    padding: 10px;
+    border: 1px solid #dddddd;
+  }
+  #qualifications .edu_details table td {
+    text-align: left;
+    padding: 10px;
+    border: 1px solid #dddddd;
+  }
+  #qualifications .edu_details th {
     color: #dd4021;
   }
 }/*# sourceMappingURL=style.css.map */

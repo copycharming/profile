@@ -220,11 +220,29 @@ h1 {
         }
         .edu_details{
             font-size: 2rem;
-            padding: 15% 0;
-            text-align: left;
-        .col-6{
+            padding: 10% 0;
+
+            table{
+                border-collapse: collapse;
+                width: 90%;
+                th{
+                    text-align: left;
+                    padding: 10px;
+                    border: 1px solid #dddddd;
+                }
+                td{
+                    text-align: left;
+                    padding: 10px;
+                    border: 1px solid #dddddd;
+                }
+            }
+            // text-align: left;
+        th{
             color: #dd4021;
+            // border
+        }
+        
         }
         }
-    }
+    
 }
