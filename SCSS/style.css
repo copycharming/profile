@@ -234,7 +234,7 @@ h1 {
 }
 #project .project_description {
   font-size: 1.25rem;
-  padding: 0% 0 5%;
+  padding: 0% 0 2.5%;
 }
 #project .twitter_project {
   text-align: right;
@@ -245,4 +245,30 @@ h1 {
   text-align: left;
   padding-right: 10%;
   padding-left: 2%;
+}
+
+#contact {
+  background-color: #dd4021;
+  padding: 10% 0;
+  height: 100vh;
+}
+#contact .container-fluid {
+  width: 100%;
+}
+#contact .container-fluid h2 {
+  font-size: 8rem;
+  font-family: "Titillium Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-align: center;
+  padding: 30% 0;
+  color: #f0f0ef;
+}
+#contact .container-fluid .bg-white {
+  background-color: #f0f0ef;
+  border-radius: 20px;
+  text-align: center;
+}
+#contact .container-fluid .bg-white .contact-info {
+  padding: 10% 2.5%;
+  width: 25%;
+  fill: #0b1f52;
 }/*# sourceMappingURL=style.css.map */

@@ -279,7 +279,7 @@ h1 {
     }
     .project_description{
         font-size: 1.25rem;
-        padding: 0% 0 5%;
+        padding: 0% 0 2.5%;
     }
 
     .twitter_project{
@@ -296,3 +296,34 @@ h1 {
     }
 }
 
+
+#contact{
+    background-color: #dd4021;
+    padding: 10% 0;
+    height: 100vh;
+
+    .container-fluid{
+        width: 100%;
+        h2{
+            font-size: 8rem;
+            @include sub-heading-font;
+            text-align: center; 
+            padding: 30% 0;
+            color: #f0f0ef;
+        }
+        .bg-white{
+            background-color: #f0f0ef;
+            border-radius: 20px;
+            // margin-right: 10%;
+            // margin-left: 35%;
+            text-align: center;
+            .contact-info{
+                padding: 10% 2.5%;
+                width: 25%;
+                // color: #0b1f52;
+                fill: #0b1f52;
+            }
+        }
+        
+    }
+}
