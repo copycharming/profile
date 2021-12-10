@@ -30,7 +30,11 @@ h1 {
 }
 
 @media (max-width: 768px) {
-  header nav .container-fluid {
+  nav {
+    background-color: #fff;
+  }
+
+  nav .container-fluid {
     font-family: "Titillium Web", sans-serif;
   }
 
@@ -67,14 +71,14 @@ h1 {
   }
 }
 @media (min-width: 768px) {
-  header nav {
+  nav {
     background-color: #f7f8f3 !important;
   }
-  header nav .container-fluid {
+  nav .container-fluid {
     font-family: "Titillium Web", sans-serif;
     font-size: 1.25rem;
   }
-  header nav .navbar-brand {
+  nav .navbar-brand {
     font-size: 1.5rem;
     font-weight: bold;
   }
